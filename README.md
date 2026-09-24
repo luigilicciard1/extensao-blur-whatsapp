@@ -5,7 +5,9 @@ Começa desligada; o colaborador liga quando vai mostrar a tela.
 
 ## Uso
 
-- `Alt+Shift+B` ou clique no ícone da extensão: liga/desliga o blur.
+- Clique no ícone da extensão: abre uma telinha com um switch (liga/desliga o blur) e um
+  slider pra ajustar a intensidade do desfoque (1px a 20px).
+- `Alt+Shift+B`: liga/desliga o blur direto, sem abrir a telinha.
 - Badge **ON** no ícone = blur ativo.
 - Passar o mouse sobre uma conversa revela só ela.
 
@@ -23,7 +25,8 @@ Se o atalho não funcionar (conflito com outra extensão), ajuste em `edge://ext
 
 ## Checklist de teste
 
-- [ ] Blur liga/desliga pelo atalho e pelo ícone
+- [ ] Blur liga/desliga pelo atalho e pelo switch no popup
+- [ ] Slider do popup muda a intensidade do blur em tempo real
 - [ ] Badge acompanha o estado
 - [ ] Hover revela só a conversa sob o mouse
 - [ ] Estado se mantém após fechar e abrir o navegador
