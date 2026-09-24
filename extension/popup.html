@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <span class="label">Blur ativo</span>
+      <label class="switch">
+        <input type="checkbox" id="enabledSwitch" />
+        <span class="switch-track"></span>
+      </label>
+    </div>
+
+    <div class="row column">
+      <div class="row">
+        <label for="blurAmount" class="label">Intensidade</label>
+        <span id="blurValue" class="value">6px</span>
+      </div>
+      <input type="range" id="blurAmount" min="1" max="20" step="1" value="6" />
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Fami Privacy Blur",
+  "version": "0.1.0",
+  "description": "Blur opcional na lista de conversas do WhatsApp Web.",
+  "permissions": ["storage"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Fami Privacy Blur",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "toggle-blur": {
+      "suggested_key": { "default": "Alt+Shift+B" },
+      "description": "Ligar/desligar blur"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "css": ["blur.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

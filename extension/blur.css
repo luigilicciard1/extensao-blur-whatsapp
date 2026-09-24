@@ -1,0 +1,10 @@
+.fami-blur #pane-side [role="row"],
+.fami-blur #pane-side [role="listitem"] {
+  filter: blur(var(--fami-blur-amount, 6px));
+  transition: filter .15s ease;
+}
+
+.fami-blur #pane-side [role="row"]:hover,
+.fami-blur #pane-side [role="listitem"]:hover {
+  filter: none;
+}
